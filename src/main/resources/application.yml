@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    core:
+      url: jdbc:sqlserver://localhost:1433;databaseName=core
+      username: sa
+      password: Dbqlzpdj!234
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    custom:
+      url: jdbc:sqlserver://localhost:1433;databaseName=custom
+      username: sa
+      password: Dbqlzpdj!234
+      driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+defaultTenant: core
