@@ -1,5 +1,4 @@
-1. Tenant
-
+1. Tenant (테넌트)
 
 Tenant Resolver 
 - Application에 유입될때 해당 요청에서 테넌트 정보를 확인해야함 (예를 들어 HTTP Request, JWT, AMQP Message ...)
@@ -29,6 +28,6 @@ Tenant Interceptor
 
 일반적으로 테넌트 간 데이터를 격리하는 방법은 세 가지 주요 전략을 식별할 수 있다.
 
-1) 판별자를 기반으로 데이터를 분할 하는 것.(Partitioned Data) - 데이터를 다루는데 주의해야함
-2)  12:45
-    https://www.youtube.com/watch?v=pG-NinTx4O4&t=342
+1) 판별자를 기반으로 데이터를 분할 하는 것.(Partitioned Data) - 데이터를 다루는데 주의해야할 요소가 많음
+2) 별도의 스키마를 기반으로 분할 하는 것 (Separate Schema) - 동일한 데이터베이스를 사용하지만 각 테넌트에 대해 하나씩 다른 스키마를 갖게됨
+3) 별도의 데이터베이스로 분할 하는 것 (Separate Database) - 더 높은 수준의 격리 수준으로 요청 테넌트로 데이터를 매핑하지만 더 많은 리소스가 필요한 것이 단점 
